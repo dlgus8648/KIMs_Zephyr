@@ -1,0 +1,53 @@
+cmake:
+  application:
+    configuration-dir: /home/kimrihyeon/zephyrproject/zephyr/samples/kim_test2
+    source-dir: /home/kimrihyeon/zephyrproject/zephyr/samples/kim_test2
+  board:
+    name: nucleo_f411re
+    qualifiers: stm32f411xe
+    revision: 
+  devicetree:
+    bindings-dirs:
+     - /home/kimrihyeon/zephyrproject/zephyr/dts/bindings
+    files:
+     - /home/kimrihyeon/zephyrproject/zephyr/boards/st/nucleo_f411re/nucleo_f411re.dts
+     - /home/kimrihyeon/zephyrproject/zephyr/samples/kim_test2/app.overlay
+    include-dirs:
+     - /home/kimrihyeon/zephyrproject/modules/hal/atmel/include
+     - /home/kimrihyeon/zephyrproject/modules/hal/gigadevice/include
+     - /home/kimrihyeon/zephyrproject/modules/hal/microchip/dts
+     - /home/kimrihyeon/zephyrproject/modules/hal/nuvoton/dts
+     - /home/kimrihyeon/zephyrproject/modules/hal/nxp/dts
+     - /home/kimrihyeon/zephyrproject/modules/hal/stm32/dts
+     - /home/kimrihyeon/zephyrproject/zephyr/include
+     - /home/kimrihyeon/zephyrproject/zephyr/include/zephyr
+     - /home/kimrihyeon/zephyrproject/zephyr/dts/common
+     - /home/kimrihyeon/zephyrproject/zephyr/dts/x86
+     - /home/kimrihyeon/zephyrproject/zephyr/dts/xtensa
+     - /home/kimrihyeon/zephyrproject/zephyr/dts/sparc
+     - /home/kimrihyeon/zephyrproject/zephyr/dts/riscv
+     - /home/kimrihyeon/zephyrproject/zephyr/dts/posix
+     - /home/kimrihyeon/zephyrproject/zephyr/dts/nios2
+     - /home/kimrihyeon/zephyrproject/zephyr/dts/arm64
+     - /home/kimrihyeon/zephyrproject/zephyr/dts/arm
+     - /home/kimrihyeon/zephyrproject/zephyr/dts/arc
+     - /home/kimrihyeon/zephyrproject/zephyr/dts
+    user-files:
+     - /home/kimrihyeon/zephyrproject/zephyr/samples/kim_test2/app.overlay
+  kconfig:
+    files:
+     - /home/kimrihyeon/zephyrproject/zephyr/boards/st/nucleo_f411re/nucleo_f411re_defconfig
+     - /home/kimrihyeon/zephyrproject/zephyr/samples/kim_test2/prj.conf
+    user-files:
+     - /home/kimrihyeon/zephyrproject/zephyr/samples/kim_test2/prj.conf
+  toolchain:
+    name: zephyr
+    path: /home/kimrihyeon/zephyr-sdk-0.17.0
+  zephyr:
+    version: 4.0.99
+    zephyr-base: /home/kimrihyeon/zephyrproject/zephyr
+version: 0.1.0
+west:
+  command: /home/kimrihyeon/.local/bin/west build -b nucleo_f411re
+  topdir: /home/kimrihyeon/zephyrproject
+  version: 1.3.0

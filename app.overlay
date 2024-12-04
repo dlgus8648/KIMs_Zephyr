@@ -1,0 +1,7 @@
+&i2c1 {
+    adxl345: adxl345@53 {
+        compatible = "adi,adxl345";
+        reg = <0x53>;
+        status = "okay";
+    };
+};
