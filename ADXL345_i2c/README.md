@@ -1,5 +1,1 @@
-# KIMs_Zephyr_Prj
-# KIMs_Zephyr
-# KIMs_Zephyr
-# KIMs_Zephyr
-# KIMs_Zephyr
+# ADXL345_i2c Driver
